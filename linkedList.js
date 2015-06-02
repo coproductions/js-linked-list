@@ -78,47 +78,7 @@ var linkedListGenerator = function (){
       }
       return thisObject;
     },
-    // insert : function(value,number){
-    //   console.log('head',this.head)
-    //   var counter = 0;
-    //   var thisObject = this.head;
-    //   var nextObject = this.head.next;
-    //   var previousObject;
-    //   var newObject = {};
-    //   newObject.value = value;
-    //   newObject.next = null;
-    //   while (number !== counter){
-    //     if(number>0){
-    //       previousObject = thisObject;
-    //     }
-    //     if(thisObject){
-    //       thisObject = thisObject.next || null;
-    //       if(thisObject){
-    //       nextObject = thisObject.next || null;
-    //       }
-    //     } else return false;
-    //     counter++;
-    //   }
-    //   if(number > 0 && !thisObject){
-    //     return false;
-    //   } else {
-
-    //     newObject.next = thisObject;
-    //     if(!nextObject){
-    //       this.tail = newObject;
-    //     }
-    //     if(previousObject){
-    //       previousObject.next = newObject;
-    //     } else {
-    //       this.head = newObject;
-    //       }
-    //       console.log('head',this.head)
-    //   }
-
-
-    // },
     insert : function(value,number){
-      //console.log('head',this.head)
       var counter = 0;
       var thisObject = this.head;
       var nextObject = this.head.next;
@@ -137,7 +97,6 @@ var linkedListGenerator = function (){
         counter++;
       }
       newObject.next = thisObject;
-      //console.log('prritenrstin',previousObject)
       if(!previousObject){
         this.head = newObject;
       } else if(!thisObject){
